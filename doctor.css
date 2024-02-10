@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+}
+
+.box{
+    padding: 6vh 0;
+    background-color: silver;
+    padding-left: 8vw;
+}
+
+.leftside img{
+    padding: 6vh 0;
+    background-color: white;
+    padding-left: 8vw;
+    height: 52vh;
+}
+
+.list{
+    display: flex;
+}
+
+.drlist{
+    padding-top: 6vh;
+    padding-left: 6vw;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 10vh;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    width: 25vw;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.address1{
+    background-color: black;
+    height: 40vh;
+    width: 25vw;
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin: 0vh 4vw;
+    position: relative;
+    padding: 3vh 4vw;
+}
+
+#donation{
+    height: 40vh;
+}
+.address2{
+    background-color: black;
+    height: 40vh;
+    width: 25vw;
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin: 0vh 4vw;
+    position: relative;
+    padding: 3vh 4vw;
+}
+.address2 ul li{
+    font-size: 3vh;
+}
+
+.address{
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    text-align: center;
+}
+.end{
+    border-top: 2px solid white;
+    padding-top: 3vh;
+    padding-bottom: 2vh;    
+}
+#gotop{
+    margin-left: 50%;
+    padding: 1vh 2vw;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+}

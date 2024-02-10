@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: blue;
+    color: white;
+    height: 18vh;
+    border-bottom: 3px solid rgb(103, 45, 65);
+}
+.navbar{
+    margin: 2vw 24vw;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: absolute;
+    left: 20vw;
+    bottom: 20vh;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 5vh;
+    padding: 0 1rem;
+    position: relative; /* Added for proper positioning of ::after */
+}
+
+header nav a::after {
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 0.5vh;
+    width: 0;
+    left: 0;
+    bottom: -8px; /* Adjust this value for proper spacing */
+    transition: width 0.3s ease; /* Improved transition timing */
+}
+
+header nav a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+.logo{
+    padding: 1rem;
+}
+body{
+    background: url(imgs/nurse.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 90vh;  
+    background-position-y: 12vh;
+    overflow-x: hidden; 
+    /* overflow-y: scroll; */
+}
+
+.leftSide{
+    /* width: 50vw; */
+    height: 70vh;
+    position: relative;
+    top: 12vh;
+    right: 24vw;
+}
+
+.leftSide .heading{
+    margin: auto;
+    text-align: center;
+    font-size: 12vh;
+    font-weight: bolder;
+    color: darkred;
+}
+
+.content{
+    padding-top: 15vh;
+}
+
+.details{
+    margin-top: 14.15vh;
+    background-color: blue;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    border: 3px solid black;
+    padding: 2vw 6vw;
+}
+.donation{
+    display: flex;
+    flex-direction: column;
+    margin: 4vh 4vw;
+    position: relative;
+    top: 5vh;
+}
+.doctorlist{
+    display: flex;
+    flex-direction: column;
+    margin: 4vh 4vw;
+    position: relative;
+    right: 2vw;
+    top: 5vh;
+}
+.timing{
+    margin: 4vh 4vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    position: relative;
+    right: 5vw;
+}
+
+#htime{
+    position: relative;
+    left: 4vw;
+    color: white;
+    font-weight: bold;
+}
+
+.timing ul li{
+    font-size: 1.4vw;
+    color: white;
+    border: 2px solid white;
+    margin: 2vh 1vw;
+    list-style: none;
+    width: 30vw;
+    padding: 1vh 1vh;
+}
+.timing ul li:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.details button {
+    margin: 3vh 0;
+    border: 2px solid white;
+    border-radius: 1rem;
+    background: none;
+    color: white;
+    padding: 1vh 0;
+}
+
+.details button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s ease-in;
+}
+
+#donate{
+    height: 240px;
+    width: 240px;
+}
+.facilities{
+    display: flex;
+    background-color: blanchedalmond;
+}
+.facilities img{
+    padding: 18vh 8vw;
+}
+.facilities-data{
+    padding: 12vh 0vw;
+}
+button a{
+    font-weight: bolder;
+    color: white;
+}
+button a:hover{
+    text-decoration: none;
+    color: black;
+}
+.facilities-data button{
+    margin: 3vh 0;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background: cyan;
+    color: black;
+    padding: 1vh 0;
+}
+
+.fcover{
+    height: 10vh;
+}
+.facilities-data button:hover{
+    box-shadow: 0 0 25px cyan, 0 0 50px cyan;
+}
+.facilities-data button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+#rmore-body{
+    background: none;
+    background-color: bisque;
+}
+
+#rmore-facilities{
+    margin-top: 10vh;
+}
+
+.choseus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why{
+    margin-top: 10vh;
+}
+
+.why li{
+    border: 2px solid black;
+    margin: 2vh 1vw;
+    border-radius: 8px;
+    padding: 1vh 3vw;
+    list-style: none;
+}
+.why li:hover{
+    background-color: aqua;
+}
+.reviews{
+    
+    background-color: rgb(238, 130, 6);
+    color: white;
+    margin-top: 10vh;
+    display: flex;
+    /* overflow-y: scroll; */
+    width: 100%;
+}
+
+.rpara{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-bottom: 5vw;
+    border-radius: 1rem;
+    width: 24vw;
+    position: relative;
+    right: 5vw;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+
+#m1{
+    height: 8vh;
+}
+.donater{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    align-items: center;
+    position: relative;
+    bottom: 2vh;
+    right: 2vw;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.address1{
+    background-color: black;
+    height: 40vh;
+    width: 25vw;
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin: 0vh 4vw;
+    position: relative;
+    padding: 3vh 4vw;
+}
+
+#donation{
+    height: 40vh;
+}
+.address2{
+    background-color: black;
+    height: 40vh;
+    width: 25vw;
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin: 0vh 4vw;
+    position: relative;
+    padding: 3vh 4vw;
+}
+.address2 ul li{
+    font-size: 3vh;
+}
+
+.address{
+    padding-top: 4vh;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    text-align: center;
+}
+.end{
+    border-top: 2px solid white;
+    padding-top: 3vh;
+    padding-bottom: 2vh;    
+}
+#gotop{
+    margin-left: 50%;
+    padding: 1vh 2vw;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+    font-weight: bold;
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    border-radius: 1rem;
+}
+
