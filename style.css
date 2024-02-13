@@ -10,7 +10,7 @@ header{
     border-bottom: 3px solid rgb(103, 45, 65);
 }
 .navbar{
-    margin: 2vw 24vw;
+    margin: 2vw 20vw;
     font-size: 2vw;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@ header{
     color: white;
     position: absolute;
     left: 20vw;
-    bottom: 20vh;
+    bottom: 26vh;
 }
 header nav a {
     color: white;
